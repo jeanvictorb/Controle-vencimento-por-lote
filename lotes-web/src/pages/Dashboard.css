@@ -1,0 +1,58 @@
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid transparent;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.stat-vencido { border-color: var(--danger); }
+.stat-critico { border-color: #f56e42; }
+.stat-atencao { border-color: var(--warning); }
+.stat-total   { border-color: var(--accent); }
+
+.stat-top { margin-bottom: 12px; }
+.stat-icon { font-size: 22px; }
+.stat-value {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.stat-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.dashboard-section {
+  margin-bottom: 28px;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.section-title.vencido { background: var(--danger-bg);  color: var(--danger);  }
+.section-title.critico { background: #fff5f0; color: #e05a2b; }
+.section-title.atencao { background: var(--warning-bg); color: #c07d00; }
+
+.loading {
+  padding: 60px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 15px;
+}

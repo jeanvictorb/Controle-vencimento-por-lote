@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────────────────────
+# TEMPLATE - Copie este arquivo para application.properties
+# e preencha com os dados reais. NUNCA suba o arquivo real!
+# ─────────────────────────────────────────────────────────────
+
+# Conexão SQL Server
+spring.datasource.url=jdbc:sqlserver://SEU_SERVIDOR:1433;databaseName=SEU_BANCO;encrypt=true;trustServerCertificate=true
+spring.datasource.username=SEU_USUARIO
+spring.datasource.password=SUA_SENHA
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+# JPA
+spring.jpa.hibernate.ddl-auto=validate
+spring.jpa.show-sql=false
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServerDialect
+
+# Porta da API
+server.port=8080
+
+# JWT - Use uma chave forte com pelo menos 32 caracteres
+jwt.secret=TROQUE-POR-UMA-CHAVE-SECRETA-FORTE-AQUI
+jwt.expiration=86400000
+
+# Logs
+logging.level.com.empresa.lotesapi=INFO

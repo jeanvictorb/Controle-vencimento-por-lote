@@ -1,0 +1,17 @@
+.td-id    { color: var(--text-light); font-size: 12px; width: 48px; }
+.td-desc  { font-weight: 500; }
+.td-produto { color: var(--text); }
+.td-code  { font-family: monospace; font-size: 12.5px; color: var(--text-secondary); }
+.td-date  { white-space: nowrap; }
+
+.dias-badge {
+  padding: 3px 9px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.dias-badge.vencido { background: var(--danger-bg); color: var(--danger); }
+.dias-badge.critico { background: #fff5f0; color: #e05a2b; }
+.dias-badge.atencao { background: var(--warning-bg); color: #c07d00; }
+.dias-badge.ok      { background: var(--success-bg); color: var(--success); }

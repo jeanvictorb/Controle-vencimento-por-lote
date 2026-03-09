@@ -1,0 +1,29 @@
+# ─── Maven ───────────────────────────────
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ─── IDE ─────────────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.classpath
+*.project
+*.settings/
+
+# ─── Spring Boot ─────────────────────────
+*.log
+logs/
+
+# ─── SEGURANÇA: nunca subir credenciais! ─
+src/main/resources/application.properties
+
+# Subir apenas o template de exemplo:
+!src/main/resources/application.properties.example
+
+# ─── OS ──────────────────────────────────
+.DS_Store
+Thumbs.db

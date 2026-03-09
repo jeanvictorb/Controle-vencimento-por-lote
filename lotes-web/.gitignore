@@ -1,0 +1,23 @@
+# ─── Dependências ────────────────────────
+node_modules/
+dist/
+
+# ─── SEGURANÇA: nunca subir o .env real! ─
+.env
+.env.local
+.env.production
+
+# Subir apenas o template:
+!.env.example
+
+# ─── Cache / Build ────────────────────────
+.vite/
+*.local
+
+# ─── IDE ─────────────────────────────────
+.vscode/
+.idea/
+
+# ─── OS ──────────────────────────────────
+.DS_Store
+Thumbs.db
